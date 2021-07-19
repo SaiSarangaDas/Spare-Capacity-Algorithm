@@ -13,14 +13,14 @@ Input Arguments – The network for which the spare capacity has to be deciphere
 
 Output Arguments – The original network with added spare capacity, the original network disrupted by the centrality measure specified, the edges (spare capacity) between nodes whose node numbers have been mapped to the original network, normalized cost of the network with added spare capacity.
 
-Spare.m
+Spare.m:
 A function that successively adds unmapped spare capacity to a given network, given a degree deviation constraint.
 
 Input Arguments: The network for which the spare capacity has to be added, the total number of edges that are to be added as spare capacity, the degree deviation constraint (‘inf’ if no constraint is necessary).
 
 Output Arguments: The network with added spare capacity, the edge list of spare capacity, the normalized cost of the network with added spare capacity
 
-Bestedgedeglimit.m
+Bestedgedeglimit.m:
 A function that adds unit spare capacity (one edge) to a given network
 
 Input Arguments: The network for which spare capacity is to be added, the degree deviation constraint (‘inf’ if no constraint is necessary).
@@ -29,28 +29,28 @@ Output Arguments: A vector containing the list of all possible node pairs betwee
 
 In MATLAB, when a node is disrupted, the remaining nodes downstream of that node are automatically renumbered. For example in a 10 node network, if node 2 is removed, nodes 3-10 are renumbered as nodes 2-9 respectively. Hence, one needs to map the spare capacity that is obtained from the analysis of the disrupted network to be added to the original network.
 
-Nodemap.m
+Nodemap.m:
 A function to map the nodes of the disrupted network to that of the original network
 
 Input Arguments: The original (undisrupted) network, the set of nodes that that have been disrupted from the original network (using Dyn_largestconncomp.m).
 
 Output Argument: The node map for the given network and set of nodes.
 
-Edgemap.m
+Edgemap.m:
 A function to map the edges of the disrupted network to that of the original network.
 
 Input arguments: The original (undisrupted) network, the set of nodes that that have been disrupted from the original network (using Dyn_largestconncomp.m), the edge list of spare capacity.
 
 Output argument: The edge map for the given network and set of edges.
 
-Dyn_largestconncomp.m
+Dyn_largestconncomp.m:
 A function that dynamically disrupts nodes in the network based on descending order of a given centrality. The centrality measures are dynamically recalculated post successive node deletions.
 
 Input Arguments – The network that is to be disrupted, the number of nodes to be disrupted from the network (as a percentage of the total number of nodes in the network), the centrality measure (1-betweenness centrality; 2-degree centrality)
 
 Output Arguments – The node numbers that are successively disrupted from the network, the size of the largest connected component in the network post successive node disruptions, the disrupted network post the removal of the specified number of target nodes.
 
-Static_largestconncomp.m
+Static_largestconncomp.m:
 A function that disrupts a network based on the node numbers specified.
 
 Input Arguments – The network to be disrupted, the node numbers of nodes that are to be disrupted.
