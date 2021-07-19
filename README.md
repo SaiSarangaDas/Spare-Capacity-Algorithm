@@ -7,6 +7,8 @@ Input Arguments – The network to be disrupted, the number of nodes to be disru
 
 Output Arguments – The original network with spare capacity, the disrupted network, the edge mapped spare capacity, the degree of the nodes in the original network in which spare capacity has been added, the normalized cost of the network with added spare capacity, an array that stores in increasing order the fraction of nodes that are successively removed from the graph based on a centrality measure (the x axis of the robustness graph), an array that stores the size of the largest connected component of the network without spare capacity post successive node deletions, an array that stores the size of the largest connected component of the network with spare capacity post successive node deletions (these two arrays are computed for the generation of the R value for the network without (Ro) and with spare capacity (R) respectively).
 
+A model use of Maincode.m is as follows: [b,c,d,e,f,g,h,k]=Maincode(a,10,1,5,inf);
+
 Optimspare.m: A code to iteratively add spare capacity to the disrupted network and map the nodes and edges to that of the original network (more below). 
 
 Input Arguments – The network for which the spare capacity has to be deciphered, the number of nodes to be disrupted from the network (as a percentage of the total number of nodes in the network), the centrality measure (1-betweenness centrality; 2-degree centrality), quantum of spare capacity to be added to the network (as a percentage of the total number of edges in the network), the degree deviation constraint (‘inf’ if no constraint is necessary).
