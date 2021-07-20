@@ -2,14 +2,23 @@
 The following functions written in MATLAB comprise the algorithm for deciphering the spare capacity of a network to mitigate the effect of targeted attack. The sequence of the input and output arguments for the MATLAB functions given below is the sequence in which the variables are to be initialized. Some of the functions given below are nested within other functions that are a part of this document.
 
 Sample Code:
-[c,d,e,y,z,f,g,h]=Maincode(a,10,1,3,inf);
-k=sum(g)-1; %Ro value
-l=sum(h)-1; %R value
-m=(l/k)-1; %R/Ro-1
-plot(f,g)
-hold on
-plot(f,h)
-xlabel('q','Fontweight','bold')
+
+[c,d,e,y,z,f,g,h]=Maincode(a,10,1,3,inf);  
+
+k=sum(g)-1; %Ro value  
+
+l=sum(h)-1; %R value  
+
+m=(l/k)-1; %R/Ro-1  
+
+plot(f,g)  
+
+hold on  
+
+plot(f,h)  
+
+xlabel('q','Fontweight','bold')  
+
 ylabel('S(q)','Fontweight','bold')
 
 Maincode.m: The main code of the algorithm. 
