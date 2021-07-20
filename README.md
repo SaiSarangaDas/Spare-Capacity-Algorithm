@@ -3,7 +3,7 @@ The following functions written in MATLAB comprise the algorithm for deciphering
 
 Sample Code:
 
-[c,d,e,y,z,f,g,h]=Maincode(a,10,1,3,inf);  
+[c,d,e,y,z,f,g,h]=Maincode(a,10,1,3,inf); % a is a given network for which spare capacity needs to be designed.  
 
 k=sum(g)-1; %Ro value  
 
