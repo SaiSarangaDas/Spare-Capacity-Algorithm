@@ -3,10 +3,10 @@ function [q,y,z,gg]=Bestedgedeglimit(a,deg)
 %The essense of this function, which forms the core of our algorithm, is
 %simple - we find the two largest connceted components in the disrupted graph and
 %connect them, since this is the connection that will give us the minimum finite path
-%lengths per unit spare capacity. Then we compute the sum of the finite path
+%lengths per unit spare capacity for the disrupted network. Then we compute the sum of the finite path
 %lengths between these two components; the lower the sum, the more cost
 %effective is the unit spare capacity (edge).
-%deg is a variable that will allow us to imposea ceiling on the degree of 
+%deg is a variable that will allow us to impose a ceiling on the degree of 
 %a node above which spare capacity cannot be added.
 
 %To find the two largest connected components in a graph. Vectors t and v
