@@ -27,7 +27,7 @@ function [q,y,z,sumfin]=bestedgedeglimit(a,deg)
 %   a - the network for which spare capacity is to be added, 
 %   deg - the degree deviation constraint (‘inf’ if no constraint is necessary).
 %
-% OUTPUT ArGUMENTS
+% OUTPUT ARGUMENTS
 %    q - a vector containing the list of all possible node pairs between 
 %    the two largest connected components in the network in an increasing 
 %    order of the sum of finite path lengths of the network 
