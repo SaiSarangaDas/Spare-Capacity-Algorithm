@@ -66,3 +66,35 @@ Output Arguments – The node numbers that are successively disrupted from the n
 Input Arguments – The network to be disrupted, the node numbers of nodes that are to be disrupted.
 
 Output Arguments – The disrupted network post the deletion of all the target nodes, the size of the largest connected component post successive node deletions.
+
+The scale free networks for which our algorithm was analyzed were constructed using the following codes
+
+## `analysescalefree.m`: A function that returns a scale free network with a given gamma value determined by the user
+
+Input Arguments – number of nodes in the network, number of nodes in the seed graph, number of edges in the seed graph, an arbitrary counter to increase the standard deviation of the degree distribution (this is done to generate scale free networks of diverse gamma value), gamma - the desired gamma value of the scale free network
+
+Output Arguments – the desired power law network, the slope (gamma value) and intercept of the log plot of degree distribution
+
+## `directedpowerlaw.m`: A function that returnsa scale free network with a given node number using a seed graph whose size (in terms of both edges and nodes) is given by the user
+
+Input Arguments – number of nodes in the network, number of nodes in the seed graph, stedges - number of edges in the seed graph, counter -  an arbitrary counter to increase the standard deviation of the degree distribution (this is done to generate scale free networks of diverse gamma value)
+
+Output Arguments – the desired power law network  
+
+## `erdos.m`: This function returns an Erdos Reyni graph having a given number of nodes and edges. This function is mainly used to generate seed graphs of,say, 10 nodes and 10 edges that will inturn be used to build scale free networks
+
+Input Arguments – number of nodes in the network, number of edges in the network
+
+Output Arguments – the desired Erdos_Reyni network 
+
+## `networkfit.m`: This function returns the slope (gamma value) and the intercept of the log plot of the degree distribution of any (scale free) network
+
+Input Arguments – the graph for which the respective parameters need to be found
+
+Output Arguments – the slope and the intercept of the log plot of the degree distribution of a network
+
+## `degdist.m`: This function returns the degree distribution of a network
+
+Input Arguments – the network for which the degree distribution needs to be commputed
+
+Output Arguments – the degree distribution of the network 'e'
