@@ -3,7 +3,7 @@ The following functions written in MATLAB comprise the algorithm for deciphering
 
 Sample Code:
 ```
-a=analysescalefree(200,10,10,0.25,2.5); % to generate a network 'a' which is scale free in this case
+a=analysescalefree(200,5,5,0.25,2.5); % to generate a network 'a' which is scale free in this case
 [c,d,e,y,z,f,g,h]=robustnessvalue(a,10,1,3,inf); % a is a given network for which spare capacity needs to be designed.  
 
 k=sum(g)-1; %Ro value  
@@ -82,7 +82,7 @@ Input Arguments – number of nodes in the network, number of nodes in the seed 
 
 Output Arguments – the desired power law network  
 
-## `erdos.m`: This function returns an Erdos Reyni graph having a given number of nodes and edges. This function is mainly used to generate seed graphs of,say, 10 nodes and 10 edges that will inturn be used to build scale free networks
+## `seedgraph.m`: This function returns an Erdos Reyni graph having a given number of nodes and edges. This function is mainly used to generate seed graphs of,say, 10 nodes and 10 edges that will inturn be used to build scale free networks
 
 Input Arguments – number of nodes in the network, number of edges in the network
 
