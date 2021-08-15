@@ -14,9 +14,9 @@ function b=powerlaw(numnode,stnode,stedges,counter)
 %   numnode - number of nodes in the network
 %   stnode - number of nodes in the seed graph
 %   stedges - number of edges in the seed graph
-%   counter -  an arbitrary counter to increase the standard deviation of
-%   the degree distribution (this is done to generate scale free networks
-%   of diverse gamma value)
+%   counter -  an arbitrary non negative value to increase the standard 
+%   deviation of the degree distribution (this is done to generate scale 
+%   free networks of diverse gamma value)
 %  
 % OUTPUT ARGUMENTS
 %   b - the desired power law network  
