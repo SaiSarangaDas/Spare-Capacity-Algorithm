@@ -82,7 +82,7 @@ Input Arguments – number of nodes in the network, number of nodes in the seed 
 
 Output Arguments – the desired power law network  
 
-## `seedgraph.m`: This function returns an Erdos Reyni graph having a given number of nodes and edges. This function is mainly used to generate seed graphs of,say, 10 nodes and 10 edges that will inturn be used to build scale free networks
+## `seedgraph.m`: This function returns a graph having a given number of nodes and edges. This function is mainly used to generate seed graphs of,say, 10 nodes and 10 edges that will inturn be used to build scale free networks
 
 Input Arguments – number of nodes in the network, number of edges in the network
 
