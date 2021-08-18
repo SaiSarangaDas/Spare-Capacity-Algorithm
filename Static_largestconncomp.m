@@ -24,7 +24,7 @@ function [a,b]=static_largestconncomp(c,d)
 %
 % The codeline mentioned below will disrupt the nodes mentioned in the node
 % list 'd' from the network 'c'
-% 
+%
 % [a,b]=static_largestconncomp(c,d);
 %
 % AUTHORS
@@ -36,9 +36,9 @@ b=[];
 [g,h]=conncomp(c);
 b(1,1)=max(h);
 for i=1:1:e(1,2)
-c=rmnode(c,d(1,i));
-[g,h]=conncomp(c);
-b(1,i+1)=max(h);
+    c=rmnode(c,d(1,i));
+    [g,h]=conncomp(c);
+    b(1,i+1)=max(h);
 end
 a=c;
 

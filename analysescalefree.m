@@ -1,10 +1,10 @@
 function [a,b]=analysescalefree(numnode,stnode,stedges,counter,gamma)
 % The function returns a scale free network with a given node number and
-% gamma value using a seed graph whose size (in terms of both edges and nodes) 
+% gamma value using a seed graph whose size (in terms of both edges and nodes)
 % is given by the user
 %
 % USAGE
-% 
+%
 % [a,b]=analysescalefree(numnode,stnode,stedges,counter,gamma);
 %
 % INPUT ARGUMENTS
@@ -20,7 +20,7 @@ function [a,b]=analysescalefree(numnode,stnode,stedges,counter,gamma)
 %   a - the desired power law network
 %   b - the slope (gamma value) and intercept of the log plot of degree
 %   distribution
-%  
+%
 %
 % EXAMPLES
 %
@@ -37,7 +37,7 @@ function [a,b]=analysescalefree(numnode,stnode,stedges,counter,gamma)
 a=powerlaw(numnode,stnode,stedges,counter);
 b=networkfit(a);
 while round(b(1,1),1)~=-(gamma)
-a=powerlaw(numnode,stnode,stedges,counter);
-b=networkfit(a);
+    a=powerlaw(numnode,stnode,stedges,counter);
+    b=networkfit(a);
 end
 
