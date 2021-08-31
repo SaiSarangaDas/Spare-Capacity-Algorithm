@@ -86,6 +86,6 @@ for i=1:1:m(1,2)
     n(1,i)=1-(n(1,i)/numnodes(a));
 end
 for i=1:1:m(1,2)
-    f(1,i)=f(1,i)/(numnodes(a)-(i-1));
-    l(1,i)=l(1,i)/(numnodes(a)-(i-1));
+    f(1,i)=f(1,i)/(numnodes(a));
+    l(1,i)=l(1,i)/(numnodes(a));
 end
