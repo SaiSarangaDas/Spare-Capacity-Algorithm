@@ -17,7 +17,7 @@ a(i,:)=x;
 i=i+1;
 textLine=fgetl(fileID);
 end
-Adapted from:https://in.mathworks.com/matlabcentral/answers/491562-writing-code-for-function#answer_401917
+%Adapted from:https://in.mathworks.com/matlabcentral/answers/491562-writing-code-for-function#answer_401917
 
 % Use the data in 'a' to create a graph as shown below
 b=size(a);
