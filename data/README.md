@@ -9,8 +9,8 @@ textLine = fgetl(fileID);
 x=[];
 i=1;
 a=[];
-textLine=fgetl(fileID); %keep entering this command till the first row of the edge list is captured in the 'textLine' variable. 
-%Typically, the edge list starts with two columns 
+textLine=fgetl(fileID); % Keep entering this command till the first row of the edge list is captured in the 'textLine' variable. 
+% Typically, the edge list starts with two columns 
 while ischar(textLine)
 x=str2num(textLine);
 a(i,:)=x;
@@ -18,4 +18,15 @@ i=i+1;
 textLine=fgetl(fileID);
 end
 Adapted from:https://in.mathworks.com/matlabcentral/answers/491562-writing-code-for-function#answer_401917
+
+% Use the data in 'a' to create a graph as shown below
+b=size(a);
+c=[];
+d=[];
+e=ones(b(1,1),1);
+for i=1:1:b(1,1)
+c(i,1)=a(i,1);
+d(i,1)=a(i,2);
+end
+f=graph(c,d,e,'omitselfloops');
 ```
