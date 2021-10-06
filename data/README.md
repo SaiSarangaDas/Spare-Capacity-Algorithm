@@ -1,4 +1,4 @@
-For some of the networks that have been analysed using our algorithm, the .mtx files from network repository fail to load in MATLAB. To extract network data from these files
+For some of the networks that have been analysed using our algorithm, the .mtx files from network repository fail to load in MATLAB. To extract network data from these files,
 please use the following sample code in the appropriate context
 Sample Code:
 ```
