@@ -1,6 +1,6 @@
 For some of the networks that have been analysed using our algorithm, the .mtx files from network repository fail to load in MATLAB. 
 To extract network data from these files, please use the following sample code in the appropriate context. Alternatively, the MATLAB 
-workspace containing the graph extracted from wwww.networkrepository.com is also provided.
+workspace containing the graph extracted from www.networkrepository.com is also provided.
 
 Sample Code:
 ```
